@@ -1,5 +1,12 @@
-:root{
-    --vermelho: #E50914;
+/*CSS resposável pelo estilo do projeto, formatação. Quando formato uma "class" ou uma "tag" principal. Na class
+coloca-se um ponto"." antes da palavra, e da tag não é necessário. 
+Obs: tem que referenciar na página HTMl, pelo link e href */
+
+/* ROOT: é a raiz do documento. Exemplo; para declarar as principais cores do projeto com o "var" */
+
+
+:root{  
+    --vermelho: #E50914;  
     --preta: #141414;
 }
 
@@ -28,6 +35,7 @@ header .Logo{
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
     font-size: 40px;
+
     
 }
 
@@ -46,10 +54,10 @@ header nav a:hover{
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/capa.jpg);
 
-    height: 400px;
-    background-size: cover;
+    height: 500px;
+    
 
     display:flex;
     flex-direction: column;
@@ -63,19 +71,22 @@ header nav a:hover{
 
 }    
 
-.titulo{
+.filme-principal .titulo{
     margin-top: 15%;
     font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .botao{
     background-color: rgba(0,0,0,.50); 
     border: none;
     color: white;
+    text-decoration: none;
+    
+    
 
-    padding: 15px 30px;
-    margin-right: 15px;
+    padding: 13px 2px;
+    
     font-size: 12px;
 
     cursor: pointer;
@@ -86,6 +97,8 @@ header nav a:hover{
 .botao:hover{
     background-color: white;
     color: black;
+
+    
 }
 
 .botao i{
@@ -101,8 +114,8 @@ header nav a:hover{
 }
 
 .box-filme{
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     display: block;
     cursor: pointer;
 }
@@ -110,7 +123,6 @@ header nav a:hover{
 .carrosel-filmes{
     margin-top: 5px;
 }
-
 
 
 

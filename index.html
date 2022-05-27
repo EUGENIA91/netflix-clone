@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Responsável pela estrutura do seu texto-->
 <html lang="pt-br">
-<head>
+<head>   <!--cabeça do projeto, responsável pela estrutura-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
@@ -16,12 +16,12 @@
    
     <title>NETFLIX CLONE</title>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h2 class="Logo">NETFLIX</h2>
+<body> <!--corpo do projeto-->
+    <header> <!--cabeçalho e dentro usa a div e nav para criar menus de navegação-->
+        <div class="container"> <!-- tag semantica, como caixas, usado o DIV dividir o corpo em partes(para simplificar a formação)-->
+            <h2 class="Logo">EUFLIX</h2>
             <nav>
-                <a href="#">Início</a>
+                <a href="#">Início</a> <!-- para clonar uma linha de código: Alt + shift e seta para baixo-->
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Documentários</a>
@@ -37,12 +37,21 @@
                 <p class="descricao">Oito irmãos inseparáveis buscam amor e felicidade na alta sociedade de Londres. Assista agora a nova temporada Bridgerton que está imperdivel. </p>
                 <div class="botoes">
                     <button role="button" class="botao">
-                    <i class="fa-solid fa-play"></i>
-                            ASSISTIR AGORA 
+                    
+                    
+                    <a class="botao" href="https://www.youtube.com/watch?v=SEBUt-BjGf8&t=106s" target="_blank">
+                        <i class="fa-solid fa-play"></i>
+                        ASSISTIR AGORA
+                    </a>
+                               
                     </button>
                     <button role="button" class="botao">
-                        <i class="fa-solid fa-circle-info"></i> 
-                            MAIS INFORMAÇÕES
+
+                        <a class="botao" href="https://www.themoviedb.org/tv/91239-bridgerton" target="_blank">
+                            <i class="fa-solid fa-circle-info"></i> 
+                                MAIS INFORMAÇÕES
+                        </a>
+                        
                     </button>
                 </div>
             </div>    
@@ -81,7 +90,7 @@
             </div>
             <div class="item">
                 <img class="box-filme" src="img/mini 10.jpg" alt="" srcset="">
-            </div>
+            </div> 
 
         </div>     
     </div>
